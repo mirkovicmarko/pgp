@@ -1,3 +1,4 @@
+
 from PySide6.QtWidgets import QMainWindow
 
 from ui_mainWindow import Ui_MainWindow
