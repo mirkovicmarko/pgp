@@ -133,7 +133,7 @@ class Ui_GenerateKeyWindow(object):
 #if QT_CONFIG(tooltip)
         GenerateKeyWindow.setToolTip("")
 #endif // QT_CONFIG(tooltip)
-        self.titleLabel.setText(QCoreApplication.translate("GenerateKeyWindow", u"You have to fill the following form before key generation", None))
+        self.titleLabel.setText(QCoreApplication.translate("GenerateKeyWindow", u"Please fill the following form to generate your keys", None))
         self.nameGroupBox.setTitle(QCoreApplication.translate("GenerateKeyWindow", u"Name:", None))
         self.emailGroupBox.setTitle(QCoreApplication.translate("GenerateKeyWindow", u"E-mail:", None))
         self.asymmetricKeyAlgGroupBox.setTitle(QCoreApplication.translate("GenerateKeyWindow", u"Asymmetric key algorithm:", None))
