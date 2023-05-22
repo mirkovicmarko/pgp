@@ -49,29 +49,29 @@ class Ui_KeysWindow(object):
 
         self.verticalLayout.addWidget(self.titleLabel)
 
-        self.generateDeleteButton = QPushButton(self.centralwidget)
-        self.generateDeleteButton.setObjectName(u"generateDeleteButton")
-        sizePolicy.setHeightForWidth(self.generateDeleteButton.sizePolicy().hasHeightForWidth())
-        self.generateDeleteButton.setSizePolicy(sizePolicy)
-        self.generateDeleteButton.setStyleSheet(u"background-color: rgb(74, 74, 74);")
+        self.generateButton = QPushButton(self.centralwidget)
+        self.generateButton.setObjectName(u"generateButton")
+        sizePolicy.setHeightForWidth(self.generateButton.sizePolicy().hasHeightForWidth())
+        self.generateButton.setSizePolicy(sizePolicy)
+        self.generateButton.setStyleSheet(u"background-color: rgb(74, 74, 74);")
 
-        self.verticalLayout.addWidget(self.generateDeleteButton)
+        self.verticalLayout.addWidget(self.generateButton)
 
-        self.importExportButton = QPushButton(self.centralwidget)
-        self.importExportButton.setObjectName(u"importExportButton")
-        sizePolicy.setHeightForWidth(self.importExportButton.sizePolicy().hasHeightForWidth())
-        self.importExportButton.setSizePolicy(sizePolicy)
-        self.importExportButton.setStyleSheet(u"background-color: rgb(74, 74, 74);")
+        self.importButton = QPushButton(self.centralwidget)
+        self.importButton.setObjectName(u"importButton")
+        sizePolicy.setHeightForWidth(self.importButton.sizePolicy().hasHeightForWidth())
+        self.importButton.setSizePolicy(sizePolicy)
+        self.importButton.setStyleSheet(u"background-color: rgb(74, 74, 74);")
 
-        self.verticalLayout.addWidget(self.importExportButton)
+        self.verticalLayout.addWidget(self.importButton)
 
-        self.keyringsButton = QPushButton(self.centralwidget)
-        self.keyringsButton.setObjectName(u"keyringsButton")
-        sizePolicy.setHeightForWidth(self.keyringsButton.sizePolicy().hasHeightForWidth())
-        self.keyringsButton.setSizePolicy(sizePolicy)
-        self.keyringsButton.setStyleSheet(u"background-color: rgb(74, 74, 74);")
+        self.seeAllKeyringsButton = QPushButton(self.centralwidget)
+        self.seeAllKeyringsButton.setObjectName(u"seeAllKeyringsButton")
+        sizePolicy.setHeightForWidth(self.seeAllKeyringsButton.sizePolicy().hasHeightForWidth())
+        self.seeAllKeyringsButton.setSizePolicy(sizePolicy)
+        self.seeAllKeyringsButton.setStyleSheet(u"background-color: rgb(74, 74, 74);")
 
-        self.verticalLayout.addWidget(self.keyringsButton)
+        self.verticalLayout.addWidget(self.seeAllKeyringsButton)
 
         KeysWindow.setCentralWidget(self.centralwidget)
 
@@ -83,8 +83,8 @@ class Ui_KeysWindow(object):
     def retranslateUi(self, KeysWindow):
         KeysWindow.setWindowTitle(QCoreApplication.translate("KeysWindow", u"Keys", None))
         self.titleLabel.setText(QCoreApplication.translate("KeysWindow", u"Key functions", None))
-        self.generateDeleteButton.setText(QCoreApplication.translate("KeysWindow", u"GENERATE/DELETE", None))
-        self.importExportButton.setText(QCoreApplication.translate("KeysWindow", u"IMPORT/EXPORT", None))
-        self.keyringsButton.setText(QCoreApplication.translate("KeysWindow", u"KEYRINGS", None))
+        self.generateButton.setText(QCoreApplication.translate("KeysWindow", u"GENERATE YOUR KEYS", None))
+        self.importButton.setText(QCoreApplication.translate("KeysWindow", u"IMPORT KEYS", None))
+        self.seeAllKeyringsButton.setText(QCoreApplication.translate("KeysWindow", u"SEE ALL KEYRINGS", None))
     # retranslateUi
 

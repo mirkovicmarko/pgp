@@ -3,8 +3,8 @@ from PySide6.QtWidgets import QMainWindow
 from ui_keysWindow import Ui_KeysWindow
 
 from windowManager import WindowManager
-from generateDeleteKeysWindow import GenerateDeleteKeysWindow
-from importExportKeysWindow import ImportExportKeysWindow
+from generateKeysWindow import GenerateKeysWindow
+from importKeysWindow import ImportKeysWindow
 from allKeyringsWindow import AllKeyringsWindow
 
 class KeysWindow(QMainWindow):
@@ -13,6 +13,6 @@ class KeysWindow(QMainWindow):
         self.ui = Ui_KeysWindow()
         self.ui.setupUi(self)
 
-        self.ui.generateDeleteButton.clicked.connect(lambda: WindowManager.openWindow(self, GenerateDeleteKeysWindow))
-        self.ui.importExportButton.clicked.connect(lambda: WindowManager.openWindow(self, ImportExportKeysWindow))
-        self.ui.keyringsButton.clicked.connect(lambda: WindowManager.openWindow(self, AllKeyringsWindow))
+        self.ui.generateButton.clicked.connect(lambda: WindowManager.openWindow(self, GenerateKeysWindow))
+        self.ui.importButton.clicked.connect(lambda: WindowManager.openWindow(self, ImportKeysWindow))
+        self.ui.seeAllKeyringsButton.clicked.connect(lambda: WindowManager.openWindow(self, AllKeyringsWindow))
