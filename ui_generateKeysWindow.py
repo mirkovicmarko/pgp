@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'generateKeyWindow.ui'
+## Form generated from reading UI file 'generateKeysWindow.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.0
 ##
@@ -19,18 +19,18 @@ from PySide6.QtWidgets import (QApplication, QGroupBox, QHBoxLayout, QLabel,
     QMainWindow, QPushButton, QRadioButton, QSizePolicy,
     QTextEdit, QVBoxLayout, QWidget)
 
-class Ui_GenerateKeyWindow(object):
-    def setupUi(self, GenerateKeyWindow):
-        if not GenerateKeyWindow.objectName():
-            GenerateKeyWindow.setObjectName(u"GenerateKeyWindow")
-        GenerateKeyWindow.setEnabled(True)
-        GenerateKeyWindow.resize(800, 600)
-        GenerateKeyWindow.setLayoutDirection(Qt.LeftToRight)
-        GenerateKeyWindow.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
+class Ui_GenerateKeysWindow(object):
+    def setupUi(self, GenerateKeysWindow):
+        if not GenerateKeysWindow.objectName():
+            GenerateKeysWindow.setObjectName(u"GenerateKeysWindow")
+        GenerateKeysWindow.setEnabled(True)
+        GenerateKeysWindow.resize(800, 600)
+        GenerateKeysWindow.setLayoutDirection(Qt.LeftToRight)
+        GenerateKeysWindow.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
 "color: white;\n"
 "font-size: 12pt;")
-        GenerateKeyWindow.setUnifiedTitleAndToolBarOnMac(True)
-        self.centralwidget = QWidget(GenerateKeyWindow)
+        GenerateKeysWindow.setUnifiedTitleAndToolBarOnMac(True)
+        self.centralwidget = QWidget(GenerateKeysWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout_5 = QVBoxLayout(self.centralwidget)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
@@ -130,28 +130,28 @@ class Ui_GenerateKeyWindow(object):
 
         self.verticalLayout_5.addLayout(self.cancelGenerateLayout)
 
-        GenerateKeyWindow.setCentralWidget(self.centralwidget)
+        GenerateKeysWindow.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(GenerateKeyWindow)
+        self.retranslateUi(GenerateKeysWindow)
 
-        QMetaObject.connectSlotsByName(GenerateKeyWindow)
+        QMetaObject.connectSlotsByName(GenerateKeysWindow)
     # setupUi
 
-    def retranslateUi(self, GenerateKeyWindow):
-        GenerateKeyWindow.setWindowTitle(QCoreApplication.translate("GenerateKeyWindow", u"Generate key", None))
+    def retranslateUi(self, GenerateKeysWindow):
+        GenerateKeysWindow.setWindowTitle(QCoreApplication.translate("GenerateKeysWindow", u"Generate key", None))
 #if QT_CONFIG(tooltip)
-        GenerateKeyWindow.setToolTip("")
+        GenerateKeysWindow.setToolTip("")
 #endif // QT_CONFIG(tooltip)
-        self.titleLabel.setText(QCoreApplication.translate("GenerateKeyWindow", u"Please fill the following form to generate your keys", None))
-        self.nameGroupBox.setTitle(QCoreApplication.translate("GenerateKeyWindow", u"Name:", None))
-        self.emailGroupBox.setTitle(QCoreApplication.translate("GenerateKeyWindow", u"E-mail:", None))
-        self.asymmetricKeyAlgGroupBox.setTitle(QCoreApplication.translate("GenerateKeyWindow", u"Asymmetric key algorithm:", None))
-        self.rsaRadioButton.setText(QCoreApplication.translate("GenerateKeyWindow", u"RSA", None))
-        self.dsaRadioButton.setText(QCoreApplication.translate("GenerateKeyWindow", u"DSA + ElGamal", None))
-        self.keyLengthGroupBox.setTitle(QCoreApplication.translate("GenerateKeyWindow", u"Key length:", None))
-        self.len1024radioButton.setText(QCoreApplication.translate("GenerateKeyWindow", u"1024", None))
-        self.len2048radioButton.setText(QCoreApplication.translate("GenerateKeyWindow", u"2048", None))
-        self.cancelButton.setText(QCoreApplication.translate("GenerateKeyWindow", u"Cancel", None))
-        self.generateButton.setText(QCoreApplication.translate("GenerateKeyWindow", u"Generate", None))
+        self.titleLabel.setText(QCoreApplication.translate("GenerateKeysWindow", u"Please fill the following form to generate your keys", None))
+        self.nameGroupBox.setTitle(QCoreApplication.translate("GenerateKeysWindow", u"Name:", None))
+        self.emailGroupBox.setTitle(QCoreApplication.translate("GenerateKeysWindow", u"E-mail:", None))
+        self.asymmetricKeyAlgGroupBox.setTitle(QCoreApplication.translate("GenerateKeysWindow", u"Asymmetric key algorithm:", None))
+        self.rsaRadioButton.setText(QCoreApplication.translate("GenerateKeysWindow", u"RSA", None))
+        self.dsaRadioButton.setText(QCoreApplication.translate("GenerateKeysWindow", u"DSA + ElGamal", None))
+        self.keyLengthGroupBox.setTitle(QCoreApplication.translate("GenerateKeysWindow", u"Key length:", None))
+        self.len1024radioButton.setText(QCoreApplication.translate("GenerateKeysWindow", u"1024", None))
+        self.len2048radioButton.setText(QCoreApplication.translate("GenerateKeysWindow", u"2048", None))
+        self.cancelButton.setText(QCoreApplication.translate("GenerateKeysWindow", u"Cancel", None))
+        self.generateButton.setText(QCoreApplication.translate("GenerateKeysWindow", u"Generate", None))
     # retranslateUi
 
