@@ -9,15 +9,14 @@
 ################################################################################
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
-                            QMetaObject, QObject, QPoint, QRect,
-                            QSize, QTime, QUrl, Qt)
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-                           QFont, QFontDatabase, QGradient, QIcon,
-                           QImage, QKeySequence, QLinearGradient, QPainter,
-                           QPalette, QPixmap, QRadialGradient, QTransform)
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QHBoxLayout, QLabel, QMainWindow,
-                               QScrollArea, QSizePolicy, QVBoxLayout, QWidget)
-
+    QScrollArea, QSizePolicy, QVBoxLayout, QWidget)
 
 class Ui_AllKeyringsWindow(object):
     def setupUi(self, AllKeyringsWindow):
@@ -25,8 +24,8 @@ class Ui_AllKeyringsWindow(object):
             AllKeyringsWindow.setObjectName(u"AllKeyringsWindow")
         AllKeyringsWindow.resize(800, 600)
         AllKeyringsWindow.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
-                                        "color: white;\n"
-                                        "font-size: 12pt;")
+"color: white;\n"
+"font-size: 12pt;")
         self.centralwidget = QWidget(AllKeyringsWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -34,8 +33,8 @@ class Ui_AllKeyringsWindow(object):
         self.titleLabel = QLabel(self.centralwidget)
         self.titleLabel.setObjectName(u"titleLabel")
         self.titleLabel.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
-                                      "color: white;\n"
-                                      "font-size: 26pt;")
+"color: white;\n"
+"font-size: 26pt;")
         self.titleLabel.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout.addWidget(self.titleLabel)
@@ -45,8 +44,8 @@ class Ui_AllKeyringsWindow(object):
         self.publicScrollArea = QScrollArea(self.centralwidget)
         self.publicScrollArea.setObjectName(u"publicScrollArea")
         self.publicScrollArea.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
-                                            "color: white;\n"
-                                            "font-size: 20pt;")
+"color: white;\n"
+"font-size: 20pt;")
         self.publicScrollArea.setWidgetResizable(True)
         self.publicScrollAreaWidgetContents = QWidget()
         self.publicScrollAreaWidgetContents.setObjectName(u"publicScrollAreaWidgetContents")
@@ -56,8 +55,8 @@ class Ui_AllKeyringsWindow(object):
         self.publicTitleLabel = QLabel(self.publicScrollAreaWidgetContents)
         self.publicTitleLabel.setObjectName(u"publicTitleLabel")
         self.publicTitleLabel.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
-                                            "color: white;\n"
-                                            "font-size: 20pt;")
+"color: white;\n"
+"font-size: 20pt;")
         self.publicTitleLabel.setAlignment(Qt.AlignCenter)
 
         self.publicVerticalLayout.addWidget(self.publicTitleLabel)
@@ -74,8 +73,8 @@ class Ui_AllKeyringsWindow(object):
         sizePolicy.setHeightForWidth(self.privateScrollArea.sizePolicy().hasHeightForWidth())
         self.privateScrollArea.setSizePolicy(sizePolicy)
         self.privateScrollArea.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
-                                             "color: white;\n"
-                                             "font-size: 20pt;")
+"color: white;\n"
+"font-size: 20pt;")
         self.privateScrollArea.setWidgetResizable(True)
         self.privateScrollAreaWidgetContents = QWidget()
         self.privateScrollAreaWidgetContents.setObjectName(u"privateScrollAreaWidgetContents")
@@ -85,8 +84,8 @@ class Ui_AllKeyringsWindow(object):
         self.privateTitleLabel = QLabel(self.privateScrollAreaWidgetContents)
         self.privateTitleLabel.setObjectName(u"privateTitleLabel")
         self.privateTitleLabel.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
-                                             "color: white;\n"
-                                             "font-size: 20pt;")
+"color: white;\n"
+"font-size: 20pt;")
         self.privateTitleLabel.setAlignment(Qt.AlignCenter)
 
         self.privateVerticalLayout.addWidget(self.privateTitleLabel)
@@ -95,6 +94,7 @@ class Ui_AllKeyringsWindow(object):
 
         self.horizontalLayout.addWidget(self.privateScrollArea)
 
+
         self.verticalLayout.addLayout(self.horizontalLayout)
 
         AllKeyringsWindow.setCentralWidget(self.centralwidget)
@@ -102,12 +102,12 @@ class Ui_AllKeyringsWindow(object):
         self.retranslateUi(AllKeyringsWindow)
 
         QMetaObject.connectSlotsByName(AllKeyringsWindow)
-
     # setupUi
 
     def retranslateUi(self, AllKeyringsWindow):
-        AllKeyringsWindow.setWindowTitle(QCoreApplication.translate("AllKeyringsWindow", u"MainWindow", None))
+        AllKeyringsWindow.setWindowTitle(QCoreApplication.translate("AllKeyringsWindow", u"All keyrings", None))
         self.titleLabel.setText(QCoreApplication.translate("AllKeyringsWindow", u"All keyrings", None))
         self.publicTitleLabel.setText(QCoreApplication.translate("AllKeyringsWindow", u"Public keyrings", None))
         self.privateTitleLabel.setText(QCoreApplication.translate("AllKeyringsWindow", u"Private keyrings", None))
     # retranslateUi
+

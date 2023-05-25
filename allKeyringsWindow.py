@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QMainWindow, QPushButton
+from PySide6.QtWidgets import QMainWindow
 
 from WidgetManagers.ButtonManager import ButtonManager
 from WidgetManagers.LayoutManager import LayoutManager
@@ -11,13 +11,19 @@ class AllKeyringsWindow(QMainWindow):
         self.ui = Ui_AllKeyringsWindow()
         self.ui.setupUi(self)
 
+        self.fillPublicLayout()
+        self.fillPrivateLayout()
+
+    def fillPublicLayout(self):
         publicB = 3
-        privateB = 1
 
         for i in range(0, publicB):
             button = ButtonManager.createButtonWithTitle("Button" + str(i))
             ButtonManager.setButtonStyleSheet(button, u"background-color: rgb(74, 74, 74);")
             LayoutManager.addButtonToLayout(button, self.ui.publicVerticalLayout)
+
+    def fillPrivateLayout(self):
+        privateB = 1
 
         for i in range(0, privateB):
             button = ButtonManager.createButtonWithTitle("Button" + str(i))
