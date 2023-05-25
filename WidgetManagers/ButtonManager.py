@@ -3,10 +3,10 @@ from PySide6.QtWidgets import QPushButton
 
 class ButtonManager:
     @staticmethod
-    def createButtonWithTitle(self, title):
+    def createButtonWithTitle(title):
         return QPushButton(title)
 
     @staticmethod
-    def setButtonStileSheet(self, button, stileSheet):
+    def setButtonStileSheet(button, stileSheet):
         button.setStileSheet(stileSheet)
         
