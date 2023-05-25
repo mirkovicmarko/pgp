@@ -13,18 +13,118 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>37</height>
-    </rect>
-   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(51, 51, 51);
+color: white;
+font-size: 12pt;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(51, 51, 51);
+color: white;
+font-size: 26pt;</string>
+      </property>
+      <property name="text">
+       <string>All keyrings</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QScrollArea" name="publicScrollArea">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(51, 51, 51);
+color: white;
+font-size: 20pt;</string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="publicScrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>380</width>
+           <height>533</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="publicVerticalLayout">
+          <item>
+           <widget class="QLabel" name="publicTitleLabel">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(51, 51, 51);
+color: white;
+font-size: 20pt;</string>
+            </property>
+            <property name="text">
+             <string>Public keyrings</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QScrollArea" name="privateScrollArea">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(51, 51, 51);
+color: white;
+font-size: 20pt;</string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="privateScrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>380</width>
+           <height>533</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="privateVerticalLayout">
+          <item>
+           <widget class="QLabel" name="privateTitleLabel">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(51, 51, 51);
+color: white;
+font-size: 20pt;</string>
+            </property>
+            <property name="text">
+             <string>Private keyrings</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
