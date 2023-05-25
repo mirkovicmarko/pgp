@@ -9,16 +9,15 @@
 ################################################################################
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
-                            QMetaObject, QObject, QPoint, QRect,
-                            QSize, QTime, QUrl, Qt)
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-                           QFont, QFontDatabase, QGradient, QIcon,
-                           QImage, QKeySequence, QLinearGradient, QPainter,
-                           QPalette, QPixmap, QRadialGradient, QTransform)
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QGroupBox, QHBoxLayout, QLabel,
-                               QLineEdit, QMainWindow, QPushButton, QRadioButton,
-                               QSizePolicy, QVBoxLayout, QWidget)
-
+    QLineEdit, QMainWindow, QPushButton, QRadioButton,
+    QSizePolicy, QVBoxLayout, QWidget)
 
 class Ui_GenerateKeysWindow(object):
     def setupUi(self, GenerateKeysWindow):
@@ -28,8 +27,8 @@ class Ui_GenerateKeysWindow(object):
         GenerateKeysWindow.resize(800, 600)
         GenerateKeysWindow.setLayoutDirection(Qt.LeftToRight)
         GenerateKeysWindow.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
-                                         "color: white;\n"
-                                         "font-size: 12pt;")
+"color: white;\n"
+"font-size: 12pt;")
         GenerateKeysWindow.setUnifiedTitleAndToolBarOnMac(True)
         self.centralwidget = QWidget(GenerateKeysWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -44,8 +43,8 @@ class Ui_GenerateKeysWindow(object):
         self.titleLabel.setSizePolicy(sizePolicy)
         self.titleLabel.setLayoutDirection(Qt.LeftToRight)
         self.titleLabel.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
-                                      "color: white;\n"
-                                      "font-size: 26pt;")
+"color: white;\n"
+"font-size: 26pt;")
         self.titleLabel.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_5.addWidget(self.titleLabel)
@@ -62,6 +61,7 @@ class Ui_GenerateKeysWindow(object):
 
         self.verticalLayout_4.addWidget(self.lineEdit)
 
+
         self.verticalLayout_5.addWidget(self.nameGroupBox)
 
         self.emailGroupBox = QGroupBox(self.centralwidget)
@@ -75,6 +75,7 @@ class Ui_GenerateKeysWindow(object):
         self.lineEdit_2.setStyleSheet(u"background-color: rgb(74, 74, 74);")
 
         self.verticalLayout_3.addWidget(self.lineEdit_2)
+
 
         self.verticalLayout_5.addWidget(self.emailGroupBox)
 
@@ -96,6 +97,7 @@ class Ui_GenerateKeysWindow(object):
 
         self.verticalLayout.addWidget(self.dsaRadioButton)
 
+
         self.verticalLayout_5.addWidget(self.asymmetricKeyAlgGroupBox)
 
         self.keyLengthGroupBox = QGroupBox(self.centralwidget)
@@ -115,6 +117,7 @@ class Ui_GenerateKeysWindow(object):
         self.len2048radioButton.setChecked(False)
 
         self.verticalLayout_2.addWidget(self.len2048radioButton)
+
 
         self.verticalLayout_5.addWidget(self.keyLengthGroupBox)
 
@@ -136,6 +139,7 @@ class Ui_GenerateKeysWindow(object):
 
         self.cancelGenerateLayout.addWidget(self.generateButton)
 
+
         self.verticalLayout_5.addLayout(self.cancelGenerateLayout)
 
         GenerateKeysWindow.setCentralWidget(self.centralwidget)
@@ -143,25 +147,19 @@ class Ui_GenerateKeysWindow(object):
         self.retranslateUi(GenerateKeysWindow)
 
         QMetaObject.connectSlotsByName(GenerateKeysWindow)
-
     # setupUi
 
     def retranslateUi(self, GenerateKeysWindow):
-        GenerateKeysWindow.setWindowTitle(QCoreApplication.translate("GenerateKeysWindow", u"Generate key", None))
-        # if QT_CONFIG(tooltip)
+        GenerateKeysWindow.setWindowTitle(QCoreApplication.translate("GenerateKeysWindow", u"Generate keys", None))
+#if QT_CONFIG(tooltip)
         GenerateKeysWindow.setToolTip("")
-        # endif // QT_CONFIG(tooltip)
-        self.titleLabel.setText(
-            QCoreApplication.translate("GenerateKeysWindow", u"Please fill the following form to generate your keys",
-                                       None))
+#endif // QT_CONFIG(tooltip)
+        self.titleLabel.setText(QCoreApplication.translate("GenerateKeysWindow", u"Please fill the following form to generate your keys", None))
         self.nameGroupBox.setTitle(QCoreApplication.translate("GenerateKeysWindow", u"Name:", None))
-        self.lineEdit.setPlaceholderText(
-            QCoreApplication.translate("GenerateKeysWindow", u"Enter your name here...", None))
+        self.lineEdit.setPlaceholderText(QCoreApplication.translate("GenerateKeysWindow", u"Enter your name here...", None))
         self.emailGroupBox.setTitle(QCoreApplication.translate("GenerateKeysWindow", u"E-mail:", None))
-        self.lineEdit_2.setPlaceholderText(
-            QCoreApplication.translate("GenerateKeysWindow", u"Enter your e-mail here..", None))
-        self.asymmetricKeyAlgGroupBox.setTitle(
-            QCoreApplication.translate("GenerateKeysWindow", u"Asymmetric key algorithm:", None))
+        self.lineEdit_2.setPlaceholderText(QCoreApplication.translate("GenerateKeysWindow", u"Enter your e-mail here..", None))
+        self.asymmetricKeyAlgGroupBox.setTitle(QCoreApplication.translate("GenerateKeysWindow", u"Asymmetric key algorithm:", None))
         self.rsaRadioButton.setText(QCoreApplication.translate("GenerateKeysWindow", u"RSA", None))
         self.dsaRadioButton.setText(QCoreApplication.translate("GenerateKeysWindow", u"DSA + ElGamal", None))
         self.keyLengthGroupBox.setTitle(QCoreApplication.translate("GenerateKeysWindow", u"Key length:", None))
@@ -170,3 +168,4 @@ class Ui_GenerateKeysWindow(object):
         self.cancelButton.setText(QCoreApplication.translate("GenerateKeysWindow", u"Cancel", None))
         self.generateButton.setText(QCoreApplication.translate("GenerateKeysWindow", u"Generate", None))
     # retranslateUi
+

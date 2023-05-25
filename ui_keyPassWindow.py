@@ -9,16 +9,15 @@
 ################################################################################
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
-                            QMetaObject, QObject, QPoint, QRect,
-                            QSize, QTime, QUrl, Qt)
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-                           QFont, QFontDatabase, QGradient, QIcon,
-                           QImage, QKeySequence, QLinearGradient, QPainter,
-                           QPalette, QPixmap, QRadialGradient, QTransform)
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QGroupBox, QLabel, QLineEdit,
-                               QMainWindow, QPushButton, QSizePolicy, QVBoxLayout,
-                               QWidget)
-
+    QMainWindow, QPushButton, QSizePolicy, QVBoxLayout,
+    QWidget)
 
 class Ui_KeyPassWindow(object):
     def setupUi(self, KeyPassWindow):
@@ -26,8 +25,8 @@ class Ui_KeyPassWindow(object):
             KeyPassWindow.setObjectName(u"KeyPassWindow")
         KeyPassWindow.resize(400, 300)
         KeyPassWindow.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
-                                    "color: white;\n"
-                                    "font-size: 12pt;")
+"color: white;\n"
+"font-size: 12pt;")
         self.centralwidget = QWidget(KeyPassWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -41,8 +40,8 @@ class Ui_KeyPassWindow(object):
         sizePolicy.setHeightForWidth(self.titleLabel.sizePolicy().hasHeightForWidth())
         self.titleLabel.setSizePolicy(sizePolicy)
         self.titleLabel.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
-                                      "color: white;\n"
-                                      "font-size: 20pt;")
+"color: white;\n"
+"font-size: 20pt;")
         self.titleLabel.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout.addWidget(self.titleLabel)
@@ -58,6 +57,7 @@ class Ui_KeyPassWindow(object):
         self.passphaseLineEdit.setStyleSheet(u"background-color: rgb(74, 74, 74);")
 
         self.verticalLayout_2.addWidget(self.passphaseLineEdit)
+
 
         self.verticalLayout.addWidget(self.passphaseGroupBox)
 
@@ -77,14 +77,13 @@ class Ui_KeyPassWindow(object):
         self.retranslateUi(KeyPassWindow)
 
         QMetaObject.connectSlotsByName(KeyPassWindow)
-
     # setupUi
 
     def retranslateUi(self, KeyPassWindow):
-        KeyPassWindow.setWindowTitle(QCoreApplication.translate("KeyPassWindow", u"MainWindow", None))
+        KeyPassWindow.setWindowTitle(QCoreApplication.translate("KeyPassWindow", u"Passphase", None))
         self.titleLabel.setText(QCoreApplication.translate("KeyPassWindow", u"Please enter the passphase below", None))
         self.passphaseGroupBox.setTitle(QCoreApplication.translate("KeyPassWindow", u"Passphrase:", None))
-        self.passphaseLineEdit.setPlaceholderText(
-            QCoreApplication.translate("KeyPassWindow", u"Enter your passphase here...", None))
+        self.passphaseLineEdit.setPlaceholderText(QCoreApplication.translate("KeyPassWindow", u"Enter your passphase here...", None))
         self.okButton.setText(QCoreApplication.translate("KeyPassWindow", u"OK", None))
     # retranslateUi
+
