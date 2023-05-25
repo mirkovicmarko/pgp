@@ -1,5 +1,7 @@
 from PySide6.QtWidgets import QMainWindow, QPushButton
 
+from WidgetManagers.ButtonManager import ButtonManager
+from WidgetManagers.LayoutManager import LayoutManager
 from ui_allKeyringsWindow import Ui_AllKeyringsWindow
 
 
@@ -13,15 +15,9 @@ class AllKeyringsWindow(QMainWindow):
         privateB = 1
 
         for i in range(0, publicB):
-            button = self.createButton("Button" + str(i))
-            self.addButton(button, self.ui.publicVerticalLayout)
+            button = ButtonManager.createButtonWithTitle("Button" + str(i))
+            LayoutManager.addButtonToLayout(button, self.ui.publicVerticalLayout)
 
         for i in range(0, privateB):
-            button = self.createButton("Button" + str(i))
-            self.addButton(button, self.ui.privateVerticalLayout)
-
-    def createButton(self, title):
-        return QPushButton(title)
-
-    def addButton(self, button, layout):
-        layout.addWidget(button)
+            button = ButtonManager.createButtonWithTitle("Button" + str(i))
+            LayoutManager.addButtonToLayout(button, self.ui.privateVerticalLayout)
