@@ -1,4 +1,4 @@
 class LayoutManager:
     @staticmethod
-    def addButtonToLayout(self, button, layout):
+    def addButtonToLayout(button, layout):
         layout.addWidget(button)
