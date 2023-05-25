@@ -7,6 +7,7 @@ from generateKeysWindow import GenerateKeysWindow
 from importKeysWindow import ImportKeysWindow
 from allKeyringsWindow import AllKeyringsWindow
 
+
 class KeysWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)

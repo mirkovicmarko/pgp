@@ -9,14 +9,15 @@
 ################################################################################
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
-    QMetaObject, QObject, QPoint, QRect,
-    QSize, QTime, QUrl, Qt)
+                            QMetaObject, QObject, QPoint, QRect,
+                            QSize, QTime, QUrl, Qt)
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-    QFont, QFontDatabase, QGradient, QIcon,
-    QImage, QKeySequence, QLinearGradient, QPainter,
-    QPalette, QPixmap, QRadialGradient, QTransform)
+                           QFont, QFontDatabase, QGradient, QIcon,
+                           QImage, QKeySequence, QLinearGradient, QPainter,
+                           QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QLabel, QMainWindow, QPushButton,
-    QSizePolicy, QTabWidget, QVBoxLayout, QWidget)
+                               QSizePolicy, QTabWidget, QVBoxLayout, QWidget)
+
 
 class Ui_KeysWindow(object):
     def setupUi(self, KeysWindow):
@@ -24,8 +25,8 @@ class Ui_KeysWindow(object):
             KeysWindow.setObjectName(u"KeysWindow")
         KeysWindow.resize(800, 600)
         KeysWindow.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
-"color: white;\n"
-"font-size: 12pt;")
+                                 "color: white;\n"
+                                 "font-size: 12pt;")
         KeysWindow.setTabShape(QTabWidget.Rounded)
         self.centralwidget = QWidget(KeysWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -42,8 +43,8 @@ class Ui_KeysWindow(object):
         self.titleLabel.setSizePolicy(sizePolicy)
         self.titleLabel.setMaximumSize(QSize(16777215, 40))
         self.titleLabel.setStyleSheet(u"background-color: rgb(51, 51, 51);\n"
-"color: white;\n"
-"font-size: 26pt;")
+                                      "color: white;\n"
+                                      "font-size: 26pt;")
         self.titleLabel.setLineWidth(0)
         self.titleLabel.setAlignment(Qt.AlignCenter)
 
@@ -78,6 +79,7 @@ class Ui_KeysWindow(object):
         self.retranslateUi(KeysWindow)
 
         QMetaObject.connectSlotsByName(KeysWindow)
+
     # setupUi
 
     def retranslateUi(self, KeysWindow):
@@ -87,4 +89,3 @@ class Ui_KeysWindow(object):
         self.importButton.setText(QCoreApplication.translate("KeysWindow", u"IMPORT KEYS", None))
         self.seeAllKeyringsButton.setText(QCoreApplication.translate("KeysWindow", u"SEE ALL KEYRINGS", None))
     # retranslateUi
-
