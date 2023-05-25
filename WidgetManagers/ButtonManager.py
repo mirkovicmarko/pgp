@@ -7,6 +7,6 @@ class ButtonManager:
         return QPushButton(title)
 
     @staticmethod
-    def setButtonStileSheet(button, stileSheet):
-        button.setStileSheet(stileSheet)
+    def setButtonStyleSheet(button, styleSheet):
+        button.setStyleSheet(styleSheet)
         
