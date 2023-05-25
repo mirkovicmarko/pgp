@@ -16,8 +16,10 @@ class AllKeyringsWindow(QMainWindow):
 
         for i in range(0, publicB):
             button = ButtonManager.createButtonWithTitle("Button" + str(i))
+            ButtonManager.setButtonStyleSheet(button, u"background-color: rgb(74, 74, 74);")
             LayoutManager.addButtonToLayout(button, self.ui.publicVerticalLayout)
 
         for i in range(0, privateB):
             button = ButtonManager.createButtonWithTitle("Button" + str(i))
+            ButtonManager.setButtonStyleSheet(button, u"background-color: rgb(74, 74, 74);")
             LayoutManager.addButtonToLayout(button, self.ui.privateVerticalLayout)
