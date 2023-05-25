@@ -1,6 +1,4 @@
-from PySide6.QtWidgets import QPushButton
-
-
 class LayoutManager:
+    @staticmethod
     def addButtonToLayout(self, button, layout):
         layout.addWidget(button)
